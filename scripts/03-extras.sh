@@ -24,7 +24,7 @@ sudo snap install postman
 curl -sS https://starship.rs/install.sh | sh
 
 # Install multimedia and graphics tools
-sudo apt install -y gimp inkscape vlc
+sudo apt install -y gimp inkscape
 
 # System utilities
 sudo apt install -y bleachbit variety

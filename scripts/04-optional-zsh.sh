@@ -3,11 +3,19 @@ set -e
 
 echo "=== Optional: Zsh Setup ==="
 
-# Install zsh
-sudo apt install -y zsh
+# Check if zsh is already installed
+if command -v zsh &> /dev/null; then
+    echo "Zsh is already installed: $(zsh --version)"
+else
+    sudo apt install -y zsh
+fi
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Install oh-my-zsh (skip if already installed)
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+    echo "Oh-my-zsh is already installed, skipping"
+fi
 
 # Install useful oh-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

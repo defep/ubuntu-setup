@@ -20,11 +20,16 @@ sudo apt install -y \
     silversearcher-ag \
     flameshot \
     ranger \
-    fzf \
     neofetch \
     vlc \
     keepassxc \
     copyq
+
+# Install fzf (fuzzy finder with shortcuts/autocomplete)
+if [ ! -d "$HOME/.fzf" ]; then
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install --all
+fi
 
 # Install kitty terminal
 sudo apt install -y kitty
