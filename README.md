@@ -10,7 +10,7 @@ Run scripts in order:
 # Make scripts executable
 chmod +x scripts/*.sh
 
-# 1. Essential system tools
+# 1. Essential system tools (recommended for everyone)
 ./scripts/01-essentials.sh
 
 # 2. Development environment
@@ -18,15 +18,19 @@ chmod +x scripts/*.sh
 
 # 3. Extras (optional)
 ./scripts/03-extras.sh
+
+# 4. Optional: Zsh (uncomment lines in 03-extras.sh or run this)
+./scripts/04-optional-zsh.sh
 ```
 
 ## Structure
 
 | File | Description |
 |------|-------------|
-| `scripts/01-essentials.sh` | Basic system tools, GUI apps (kitty, gImageReader) |
-| `scripts/02-development.sh` | Programming languages, Git, Docker, VS Code |
-| `scripts/03-extras.sh` | Nice-to-have tools |
+| `scripts/01-essentials.sh` | Terminal, file managers, media players, utilities |
+| `scripts/02-development.sh` | VS Code, Docker, Node.js, Python, Rust, Go, lazydocker |
+| `scripts/03-extras.sh` | Chrome, Slack, Postman, GIMP, Inkscape, system tools |
+| `scripts/04-optional-zsh.sh` | Zsh + oh-my-zsh with plugins |
 
 ## Requirements
 

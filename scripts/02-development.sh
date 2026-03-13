@@ -34,5 +34,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install Go
 sudo apt install -y golang-go
 
+# Install lazydocker (Docker TUI)
+sudo wget https://github.com/jesseduffield/lazydocker/releases/latest/download/lazydocker_linux_amd64.tar.gz -O /tmp/lazydocker.tar.gz
+sudo tar -xzf /tmp/lazydocker.tar.gz -C /usr/local/bin lazydocker
+rm /tmp/lazydocker.tar.gz
+
 echo "=== Development tools installed ==="
 echo "Log out and back in for Docker group to take effect"

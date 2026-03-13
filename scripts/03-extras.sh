@@ -23,7 +23,13 @@ sudo snap install postman
 # Install Starship prompt (works on any shell)
 curl -sS https://starship.rs/install.sh | sh
 
-# Install zsh and oh-my-zsh (optional)
+# Install multimedia and graphics tools
+sudo apt install -y gimp inkscape vlc
+
+# System utilities
+sudo apt install -y bleachbit variety
+
+# Install zsh and oh-my-zsh (optional) - see also 04-optional-zsh.sh
 # sudo apt install -y zsh
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

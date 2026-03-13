@@ -18,7 +18,13 @@ sudo apt install -y \
     tree \
     jq \
     silversearcher-ag \
-    flameshot
+    flameshot \
+    ranger \
+    fzf \
+    neofetch \
+    vlc \
+    keepassxc \
+    copyq
 
 # Install kitty terminal
 sudo apt install -y kitty
