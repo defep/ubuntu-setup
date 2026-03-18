@@ -23,6 +23,7 @@ sudo apt install -y \
     neofetch \
     vlc \
     keepassxc \
+    gnome-sushi \
     copyq
 
 # Install fzf (fuzzy finder with shortcuts/autocomplete)
@@ -46,3 +47,7 @@ sudo apt install -y \
 # sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 
 echo "=== Essentials installed ==="
+
+# silversearcher-ag: fast code searching tool (like ack/grep)
+# gnome-sushi: file preview utility (press space on any file)
+# copyq: clipboard manager with history and custom actions
