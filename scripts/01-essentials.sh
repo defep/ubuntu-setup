@@ -17,7 +17,7 @@ sudo apt install -y \
     tmux \
     tree \
     jq \
-    silversearcher-ag \
+    ripgrep \
     flameshot \
     ranger \
     neofetch \
@@ -48,6 +48,6 @@ sudo apt install -y \
 
 echo "=== Essentials installed ==="
 
-# silversearcher-ag: fast code searching tool (like ack/grep)
+# ripgrep   : fast code searching tool (like ack/grep)
 # gnome-sushi: file preview utility (press space on any file)
 # copyq: clipboard manager with history and custom actions
